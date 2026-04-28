@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules | Developers Uncopylocked</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            background: #020202;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .rule-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .rule-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #3b82f6;
+            transform: translateX(10px);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020202; }
+        ::-webkit-scrollbar-thumb { background: #1e1e1e; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+    </style>
+</head>
+<body class="py-10 px-6">
+
+    <div class="max-w-3xl mx-auto mb-12 flex justify-between items-center animate__animated animate__fadeInDown">
+        <a href="index.html" class="glass px-6 py-2 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-white/10 transition border border-white/10">
+            <i class="fas fa-arrow-left"></i> BACK TO HOME
+        </a>
+        <img src="https://i.ibb.co/shy95Fh/logo.png" class="w-10 h-10 rounded-xl" alt="Logo">
+    </div>
+
+    <main class="max-w-3xl mx-auto">
+        <header class="text-center mb-16 animate__animated animate__fadeInUp">
+            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">
+                Server <span class="text-gradient">Rules</span>
+            </h1>
+            <p class="text-gray-400 font-medium">Welcome to DU! Please follow these guidelines to keep our developer community safe.</p>
+        </header>
+
+        <div class="space-y-4 animate__animated animate__fadeInUp animate__delay-1s">
+            
+            <div class="glass rule-card p-6 rounded-2xl">
+                <div class="flex items-start gap-4">
+                    <span class="text-blue-500 font-black text-xl">01</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">Respect Everyone</h3>
+                        <p class="text-gray-400 text-sm mt-1">Be respectful to all members. No harassment, bullying, racism, sexism, or hate speech.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl">
+                <div class="flex items-start gap-4">
+                    <span class="text-blue-500 font-black text-xl">02</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">No Spamming</h3>
+                        <p class="text-gray-400 text-sm mt-1">Do not spam messages, emojis, commands, or mention users repeatedly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl">
+                <div class="flex items-start gap-4">
+                    <span class="text-blue-500 font-black text-xl">03</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">No Unrelated Advertising</h3>
+                        <p class="text-gray-400 text-sm mt-1">Advertising other servers is strictly prohibited. Advertising Roblox games is allowed in designated areas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl border-red-500/20">
+                <div class="flex items-start gap-4">
+                    <span class="text-red-500 font-black text-xl">04</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">No Malicious Links</h3>
+                        <p class="text-gray-400 text-sm mt-1">Sending scams, phishing links, viruses, or suspicious downloads will result in an immediate ban.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl">
+                <div class="flex items-start gap-4">
+                    <span class="text-blue-500 font-black text-xl">05</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">Use Channels Correctly</h3>
+                        <p class="text-gray-400 text-sm mt-1">Keep conversations in the correct channels and stay on topic to help others navigate.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl">
+                <div class="flex items-start gap-4">
+                    <span class="text-blue-500 font-black text-xl">06</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">No Drama or Toxicity</h3>
+                        <p class="text-gray-400 text-sm mt-1">Do not start unnecessary arguments or create a toxic environment in the server.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl">
+                <div class="flex items-start gap-4">
+                    <span class="text-blue-500 font-black text-xl">07</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">Respect Staff</h3>
+                        <p class="text-gray-400 text-sm mt-1">Listen to moderators and admins. Ignoring staff instructions may result in punishment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl">
+                <div class="flex items-start gap-4">
+                    <span class="text-blue-500 font-black text-xl">08</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">No Exploiting</h3>
+                        <p class="text-gray-400 text-sm mt-1">Do not abuse bots, roles, or server features. Report bugs to staff immediately.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass rule-card p-6 rounded-2xl border-purple-500/20">
+                <div class="flex items-start gap-4">
+                    <span class="text-purple-500 font-black text-xl">09</span>
+                    <div>
+                        <h3 class="font-black text-lg uppercase tracking-wide">Follow Discord ToS</h3>
+                        <p class="text-gray-400 text-sm mt-1">Breaking Discord’s Terms of Service or Community Guidelines may lead to immediate removal.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 glass p-8 rounded-[2.5rem] text-center animate__animated animate__fadeIn">
+            <h4 class="font-black text-xl mb-2">Understood the rules?</h4>
+            <p class="text-gray-400 text-sm mb-6">By staying in the server, you agree to follow all the guidelines above.</p>
+            <a href="https://discord.gg/b8wyByrxrU" class="bg-[#5865F2] hover:bg-[#4752c4] px-8 py-3 rounded-xl font-black transition-all inline-flex items-center gap-2">
+                <i class="fab fa-discord"></i> ENTER SERVER
+            </a>
+        </div>
+    </main>
+
+    <footer class="mt-20 text-center opacity-30 text-[10px] tracking-[0.3em] uppercase">
+        <p>© 2026 Developers Uncopylocked • DU Official Rules</p>
+    </footer>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"e3c1c9af36de41759418005494a48906","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

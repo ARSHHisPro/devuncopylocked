@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Uncopylocked | Elite Roblox Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body { background: #020202; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .cyber-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .cyber-card:hover { transform: translateY(-10px); background: rgba(255, 255, 255, 0.07); }
+
+        /* Glowing Aura for Dev Cards */
+        .glow-arshh { box-shadow: 0 0 40px rgba(59, 130, 246, 0.1); border-color: rgba(59, 130, 246, 0.3); }
+        .glow-arshh:hover { box-shadow: 0 0 60px rgba(59, 130, 246, 0.25); border-color: #3b82f6; }
+        .glow-akshansh { box-shadow: 0 0 40px rgba(168, 85, 247, 0.1); border-color: rgba(168, 85, 247, 0.3); }
+        .glow-akshansh:hover { box-shadow: 0 0 60px rgba(168, 85, 247, 0.25); border-color: #a855f7; }
+
+        .text-gradient { background: linear-gradient(to right, #3b82f6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .insta-btn { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); transition: all 0.3s ease; }
+        .insta-btn:hover { filter: brightness(1.2); transform: translateY(-2px); }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+        .pulse-dot { animation: pulse-green 2s infinite; }
+    </style>
+</head>
+<body>
+
+    <div id="announcementBanner" class="fixed top-24 left-1/2 -translate-x-1/2 z-[60] hidden animate__animated animate__fadeInDown">
+        <div class="glass border border-blue-500/40 px-6 py-3 rounded-full flex items-center gap-3 shadow-2xl shadow-blue-500/20">
+            <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            <p id="announcementText" class="text-[10px] font-black uppercase tracking-widest"></p>
+        </div>
+    </div>
+
+    <nav class="p-6 sticky top-0 z-50 glass border-b border-white/5">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/shy95Fh/logo.png" class="w-9 h-9 rounded-xl shadow-lg" alt="Logo">
+                <span class="font-black tracking-tighter text-sm md:text-base uppercase">Developers <span class="text-blue-500 underline">Uncopylocked</span></span>
+            </div>
+            <a href="https://discord.gg/b8wyByrxrU" class="bg-white/5 hover:bg-white/10 px-5 py-2 rounded-full text-xs font-bold border border-white/10 transition">JOIN COMMUNITY</a>
+        </div>
+    </nav>
+
+    <header class="text-center pt-16 pb-24 px-6">
+        <div class="animate__animated animate__zoomIn">
+            <img src="https://i.ibb.co/shy95Fh/logo.png" class="w-32 h-32 mx-auto mb-8 rounded-full border-4 border-blue-500/10 shadow-2xl" alt="Main Logo">
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter animate__animated animate__fadeInUp">
+            DEVELOPERS <br> <span class="text-gradient italic uppercase">Uncopylocked</span>
+        </h1>
+        <p class="max-w-xl mx-auto text-gray-400 text-sm md:text-lg mb-12 animate__animated animate__fadeInUp">Access the most elite Roblox asset repository. Verified scripts, maps, and high-tier frameworks.</p>
+
+        <div class="flex flex-col items-center animate__animated animate__fadeInUp">
+            <div class="flex flex-col md:flex-row gap-4 w-full max-w-xs md:max-w-none justify-center">
+                <a href="https://discord.gg/b8wyByrxrU" class="bg-[#5865F2] hover:bg-[#4752c4] px-10 py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 transition-all shadow-xl shadow-blue-600/20"><i class="fab fa-discord"></i> ENTER HUB</a>
+                <a href="rules.html" class="glass border border-white/10 hover:bg-white/10 px-6 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 transition-all"><i class="fas fa-scroll text-blue-400"></i> RULES</a>
+                <a href="dmca.html" class="glass border border-white/10 hover:bg-white/10 px-6 py-5 rounded-2xl font-black text-lg flex items-center justify-center gap-3 transition-all"><i class="fas fa-gavel text-purple-400"></i> DMCA</a>
+            </div>
+
+            <div class="mt-8 glass px-6 py-3 rounded-2xl flex items-center gap-4 border border-white/10">
+                <div class="w-3 h-3 bg-green-500 rounded-full pulse-dot"></div>
+                <div class="flex flex-col items-start">
+                    <span class="text-xs text-gray-500 font-bold tracking-widest uppercase text-left">Status</span>
+                    <span class="text-sm font-black uppercase"><span id="member-count" class="text-blue-400">550+</span> Members • April 2026</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-6 py-20">
+        <h2 class="text-center text-[10px] font-bold tracking-[0.4em] text-gray-500 mb-12 uppercase">Managed By</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="glass cyber-card glow-arshh p-10 rounded-[3rem] flex flex-col items-center text-center">
+                <img src="https://ui-avatars.com/api/?name=Arshh&background=3b82f6&color=fff" class="w-24 h-24 rounded-3xl mb-6 border-2 border-blue-500/50 object-cover" alt="Arshh PFP">
+                <h3 class="text-3xl font-black italic">Arshh</h3>
+                <p class="text-blue-500 text-[10px] font-bold tracking-[0.4em] mb-6 uppercase">Lead Architect</p>
+                <div class="flex flex-col gap-3 w-full max-w-[200px]">
+                    <div class="bg-white/5 px-4 py-2 rounded-xl text-xs font-mono text-gray-400 border border-white/5">@arshhispro_</div>
+                    <a href="https://www.instagram.com/imarshh.3?igsh=bWk1cmMyeXNqYmNr" target="_blank" class="insta-btn flex items-center justify-center gap-2 text-white py-2.5 rounded-xl font-bold text-xs shadow-lg"><i class="fab fa-instagram text-lg"></i> FOLLOW</a>
+                </div>
+            </div>
+            <div class="glass cyber-card glow-akshansh p-10 rounded-[3rem] flex flex-col items-center text-center">
+                <img src="https://ui-avatars.com/api/?name=Akshansh&background=a855f7&color=fff" class="w-24 h-24 rounded-3xl mb-6 border-2 border-purple-500/50 object-cover" alt="Akshansh PFP">
+                <h3 class="text-3xl font-black italic">Akshansh</h3>
+                <p class="text-purple-500 text-[10px] font-bold tracking-[0.4em] mb-6 uppercase">Project Lead</p>
+                <div class="flex flex-col gap-3 w-full max-w-[200px]">
+                    <div class="bg-white/5 px-4 py-2 rounded-xl text-xs font-mono text-gray-400 border border-white/5">@akshanshsinha67</div>
+                    <a href="https://www.instagram.com/akshansh_6969?igsh=MmIyZ3E2MjQxdnVz" target="_blank" class="insta-btn flex items-center justify-center gap-2 text-white py-2.5 rounded-xl font-bold text-xs shadow-lg"><i class="fab fa-instagram text-lg"></i> FOLLOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center border-t border-white/5">
+        <div class="flex justify-center gap-6 mb-4">
+            <a href="rules.html" class="text-[10px] text-gray-500 hover:text-white transition uppercase tracking-widest">Rules</a>
+            <a href="dmca.html" class="text-[10px] text-gray-500 hover:text-white transition uppercase tracking-widest">DMCA</a>
+        </div>
+        <p class="text-[10px] text-gray-600 tracking-[0.3em] uppercase opacity-50">© 2026 Developers Uncopylocked</p>
+
+        <div class="mt-8 opacity-10 hover:opacity-100 transition-opacity">
+            <button onclick="openAdmin()" class="text-[8px] text-gray-500 border border-white/5 px-4 py-1 rounded hover:bg-white/5">ADMIN TERMINAL</button>
+        </div>
+    </footer>
+
+    <div id="adminPanel" class="fixed inset-0 z-[100] glass flex items-center justify-center hidden p-6">
+        <div class="bg-[#080808] border border-white/10 p-8 rounded-[2.5rem] w-full max-w-md shadow-2xl animate__animated animate__zoomIn">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-black italic uppercase tracking-tighter">Admin <span class="text-blue-500">Sync</span></h2>
+                <button onclick="closeAdmin()" class="text-gray-500 hover:text-white"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="space-y-6">
+                <div>
+                    <label class="text-[10px] font-bold text-gray-500 uppercase tracking-widest block mb-2">Sync Member Count</label>
+                    <input type="number" id="newCount" placeholder="e.g. 550" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-blue-500 transition text-white">
+                </div>
+                <div>
+                    <label class="text-[10px] font-bold text-gray-500 uppercase tracking-widest block mb-2">Announcement Message</label>
+                    <textarea id="newAnnouncement" rows="3" placeholder="Type global alert..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-purple-500 transition text-white"></textarea>
+                </div>
+                <button onclick="saveAdminData()" class="w-full bg-blue-600 hover:bg-blue-500 py-4 rounded-xl font-black uppercase tracking-widest transition shadow-lg shadow-blue-600/20">APPLY & SYNC</button>
+                <button onclick="clearAnnouncement()" class="w-full bg-red-600/10 hover:bg-red-600/20 text-red-500 py-2 rounded-xl text-[10px] font-bold uppercase transition">Clear Announcement</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // REPLACE WITH YOUR FIREBASE URL FROM FIREBASE CONSOLE
+        const DB_URL = "https://YOUR_PROJECT_ID.firebaseio.com";
+
+        function openAdmin() {
+            if (prompt("Enter Admin Password:") === "admin00") {
+                document.getElementById('adminPanel').classList.remove('hidden');
+            } else { alert("Unauthorized."); }
+        }
+
+        function closeAdmin() { document.getElementById('adminPanel').classList.add('hidden'); }
+
+        async function saveAdminData() {
+            const count = document.getElementById('newCount').value;
+            const msg = document.getElementById('newAnnouncement').value;
+            if(count) await fetch(`${DB_URL}/stats.json`, { method: 'PATCH', body: JSON.stringify({ memberCount: count + "+" }) });
+            if(msg) await fetch(`${DB_URL}/announcement.json`, { method: 'PUT', body: JSON.stringify({ text: msg, active: true }) });
+            alert("Synced!"); closeAdmin(); loadSyncedData();
+        }
+
+        async function clearAnnouncement() {
+            await fetch(`${DB_URL}/announcement.json`, { method: 'PUT', body: JSON.stringify({ text: "", active: false }) });
+            alert("Announcement Removed."); closeAdmin(); loadSyncedData();
+        }
+
+        async function loadSyncedData() {
+            try {
+                const stats = await (await fetch(`${DB_URL}/stats.json`)).json();
+                if(stats.memberCount) document.getElementById('member-count').innerText = stats.memberCount;
+                
+                const ann = await (await fetch(`${DB_URL}/announcement.json`)).json();
+                if(ann && ann.active && ann.text !== "") {
+                    document.getElementById('announcementBanner').classList.remove('hidden');
+                    document.getElementById('announcementText').innerText = ann.text;
+                } else { document.getElementById('announcementBanner').classList.add('hidden'); }
+            } catch(e) { console.log("Sync active."); }
+        }
+
+        setInterval(loadSyncedData, 20000); // Checks every 20 seconds
+        loadSyncedData();
+    </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"e3c1c9af36de41759418005494a48906","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
