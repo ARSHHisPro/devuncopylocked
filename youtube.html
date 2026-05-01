@@ -1,134 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube | Developers Uncopylocked</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube | Developers Uncopylocked</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <style>
-        body { background:#020202; color:white; font-family:'Inter',sans-serif; }
+<style>
+body { background:#020202; color:white; font-family:'Inter',sans-serif; }
 
-        .glass {
-            background: rgba(255,255,255,0.02);
-            backdrop-filter: blur(16px);
-            border:1px solid rgba(255,255,255,0.08);
-        }
+.glass {
+    background: rgba(255,255,255,0.02);
+    backdrop-filter: blur(16px);
+    border:1px solid rgba(255,255,255,0.08);
+}
 
-        .cyber-card {
-            transition:0.4s;
-        }
+.cyber-card { transition:0.4s; }
+.cyber-card:hover { transform:translateY(-8px); }
 
-        .cyber-card:hover {
-            transform:translateY(-8px);
-            background:rgba(255,255,255,0.05);
-        }
-
-        .text-gradient {
-            background: linear-gradient(to right,#3b82f6,#a855f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .yt-glow:hover {
-            box-shadow:0 0 60px rgba(255,0,0,0.25);
-        }
-    </style>
+.text-gradient {
+    background: linear-gradient(to right,#3b82f6,#a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+</style>
 </head>
 
 <body class="px-6 py-10">
 
 <!-- NAV -->
 <div class="max-w-6xl mx-auto flex justify-between items-center mb-12">
-    <a href="index.html" class="glass px-6 py-2 rounded-full text-xs font-bold flex items-center gap-2 hover:bg-white/10 transition">
-        <i class="fas fa-arrow-left"></i> BACK
-    </a>
-
-    <img src="https://i.ibb.co/G4t7094Q/DEVELOPER-s-UNCOPYLOCKED-logp.jpg" class="w-10 h-10 rounded-xl">
+<a href="index.html" class="glass px-6 py-2 rounded-full text-xs font-bold">BACK</a>
+<img src="https://i.ibb.co/G4t7094Q/DEVELOPER-s-UNCOPYLOCKED-logp.jpg" class="w-10 h-10 rounded-xl">
 </div>
 
 <!-- HERO -->
-<section class="text-center mb-20 animate__animated animate__fadeInUp">
-    <img src="https://i.ibb.co/G4t7094Q/DEVELOPER-s-UNCOPYLOCKED-logp.jpg"
-         class="w-32 h-32 mx-auto rounded-3xl border border-red-500/30 mb-6">
+<section class="text-center mb-16">
+<img src="https://i.ibb.co/G4t7094Q/DEVELOPER-s-UNCOPYLOCKED-logp.jpg"
+class="w-28 h-28 mx-auto rounded-3xl mb-4">
 
-    <h1 class="text-5xl font-black mb-4">
-        DU <span class="text-gradient">YouTube</span>
-    </h1>
+<h1 class="text-4xl font-black">
+DU <span class="text-gradient">YouTube</span>
+</h1>
 
-    <p class="text-gray-400 max-w-xl mx-auto mb-8">
-        Roblox systems, scripts, UI kits, and dev tutorials.
-        Build smarter. Learn faster.
-    </p>
+<p class="text-gray-400 text-sm mb-4">
+Subscribers: <span id="subs" class="text-red-400 font-bold">Loading...</span>
+</p>
 
-    <a href="https://www.youtube.com/@DevelopersUncopylocked"
-       target="_blank"
-       class="bg-red-600 hover:bg-red-500 px-8 py-4 rounded-xl font-black flex items-center gap-2 justify-center w-fit mx-auto transition shadow-lg shadow-red-600/20">
-        <i class="fab fa-youtube"></i> SUBSCRIBE
-    </a>
+<a href="https://www.youtube.com/@DevelopersUncopylocked"
+target="_blank"
+class="bg-red-600 px-6 py-3 rounded-xl font-bold">
+Subscribe
+</a>
 </section>
 
-<!-- FEATURED VIDEO -->
-<section class="max-w-5xl mx-auto mb-20 animate__animated animate__fadeInUp">
-    <div class="glass p-6 rounded-[2rem] yt-glow">
-        <div class="aspect-video rounded-xl overflow-hidden">
-            <iframe class="w-full h-full"
-                src="https://www.youtube.com/embed/dl3HuKGdBDc"
-                frameborder="0" allowfullscreen>
-            </iframe>
-        </div>
-    </div>
+<!-- FEATURED -->
+<section class="max-w-5xl mx-auto mb-16">
+<div class="glass p-6 rounded-2xl">
+<iframe id="featuredVideo" class="w-full aspect-video rounded-xl"
+frameborder="0" allowfullscreen></iframe>
+</div>
 </section>
 
-<!-- VIDEO GRID -->
+<!-- UPCOMING -->
+<section class="max-w-6xl mx-auto mb-16">
+<h2 class="text-center text-xs tracking-widest text-gray-500 mb-6 uppercase">
+Upcoming / Live
+</h2>
+
+<div id="upcoming" class="grid md:grid-cols-2 gap-6"></div>
+</section>
+
+<!-- LATEST -->
 <section class="max-w-6xl mx-auto">
-    <h2 class="text-center text-[10px] tracking-[0.4em] text-gray-500 mb-12 uppercase">
-        Latest/Poplular Uploads
-    </h2>
+<h2 class="text-center text-xs tracking-widest text-gray-500 mb-6 uppercase">
+Latest Videos
+</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <!-- VIDEO CARD -->
-        <div class="glass cyber-card rounded-2xl overflow-hidden">
-            <iframe class="w-full h-48"
-                src="https://www.youtube.com/embed/dl3HuKGdBDc"
-                frameborder="0"></iframe>
-
-            <div class="p-4">
-                <h3 class="font-bold text-sm">New SAB Uncopylocked. Divine update</h3>
-                <p class="text-gray-400 text-xs mt-1">SAB Divine update Uncopylocked</p>
-            </div>
-        </div>
-
-        <div class="glass cyber-card rounded-2xl overflow-hidden">
-            <iframe class="w-full h-48"
-                src="https://www.youtube.com/embed/H_fvKW9_33g"
-                frameborder="0"></iframe>
-
-            <div class="p-4">
-                <h3 class="font-bold text-sm">Steal A Brainrot New Uncopylocked! || Developer's Uncopylocked || Cyber Update Part 2</h3>
-                <p class="text-gray-400 text-xs mt-1">Newest SAB uncopylocked</p>
-            </div>
-        </div>
-
-
-
-    </div>
+<div id="videos" class="grid md:grid-cols-3 gap-6"></div>
 </section>
 
-<!-- CTA -->
-<section class="text-center mt-24">
-    <h3 class="text-2xl font-black mb-4">Don’t Miss Updates</h3>
-    <p class="text-gray-400 mb-6 text-sm">Subscribe for exclusive dev drops</p>
+<script>
+const API_KEY = "AIzaSyDHnSErCG2ZyOsvizpOg7AjivAgwuG2teg";
+const CHANNEL_ID = "UC838gGNsxb1AG8Ji2Jx0_LQ";
 
-    <a href="https://www.youtube.com/@DevelopersUncopylocked"
-       class="bg-red-600 hover:bg-red-500 px-8 py-3 rounded-xl font-black transition">
-       Subscribe Now
-    </a>
-</section>
+// Fetch Subscriber Count
+async function getSubs() {
+    const res = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`);
+    const data = await res.json();
+    document.getElementById("subs").innerText =
+        Number(data.items[0].statistics.subscriberCount).toLocaleString();
+}
+
+// Fetch Latest Videos
+async function getVideos() {
+    const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=6`);
+    const data = await res.json();
+
+    const container = document.getElementById("videos");
+    container.innerHTML = "";
+
+    data.items.forEach((item, i) => {
+        if (!item.id.videoId) return;
+
+        if (i === 0) {
+            document.getElementById("featuredVideo").src =
+                `https://www.youtube.com/embed/${item.id.videoId}`;
+        }
+
+        container.innerHTML += `
+        <div class="glass cyber-card rounded-xl overflow-hidden">
+            <iframe class="w-full h-40"
+                src="https://www.youtube.com/embed/${item.id.videoId}"
+                frameborder="0"></iframe>
+            <div class="p-3">
+                <h3 class="text-sm font-bold">${item.snippet.title}</h3>
+            </div>
+        </div>`;
+    });
+}
+
+// Fetch Upcoming / Live
+async function getUpcoming() {
+    const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&eventType=upcoming&type=video`);
+    const data = await res.json();
+
+    const container = document.getElementById("upcoming");
+    container.innerHTML = "";
+
+    if (data.items.length === 0) {
+        container.innerHTML = `<p class="text-gray-500 text-center col-span-full">No upcoming streams</p>`;
+        return;
+    }
+
+    data.items.forEach(item => {
+        container.innerHTML += `
+        <div class="glass p-4 rounded-xl">
+            <iframe class="w-full h-48"
+                src="https://www.youtube.com/embed/${item.id.videoId}"
+                frameborder="0"></iframe>
+            <p class="text-sm mt-2">${item.snippet.title}</p>
+        </div>`;
+    });
+}
+
+// INIT
+getSubs();
+getVideos();
+getUpcoming();
+</script>
 
 </body>
 </html>
