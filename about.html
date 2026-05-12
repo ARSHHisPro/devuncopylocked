@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Developers Uncopylocked</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body{
+    background:#020202;
+    color:white;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+/* Glass */
+.glass{
+    background:rgba(255,255,255,0.03);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+/* Gradient Text */
+.text-gradient{
+    background:linear-gradient(to right,#3b82f6,#a855f7);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+/* Glow Orbs */
+.bg-orb{
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:999px;
+    filter:blur(120px);
+    opacity:.15;
+    z-index:-1;
+}
+
+.orb1{
+    background:#3b82f6;
+    top:-100px;
+    left:-100px;
+}
+
+.orb2{
+    background:#a855f7;
+    right:-100px;
+    bottom:-100px;
+}
+
+/* Hover */
+.cyber-card{
+    transition:.35s;
+}
+
+.cyber-card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.05);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#020202;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#1e1e1e;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#3b82f6;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="bg-orb orb1"></div>
+<div class="bg-orb orb2"></div>
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 glass border-b border-white/5">
+
+<div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+
+<div class="flex items-center gap-3">
+
+<img src="https://i.ibb.co/shy95Fh/logo.png"
+class="w-10 h-10 rounded-xl">
+
+<span class="font-black uppercase tracking-tight">
+Developers <span class="text-blue-500">Uncopylocked</span>
+</span>
+
+</div>
+
+<div class="flex items-center gap-3">
+
+<a href="/"
+class="glass px-5 py-2 rounded-full text-xs font-bold hover:bg-white/10 transition">
+HOME
+</a>
+
+<a href="/rules"
+class="glass px-5 py-2 rounded-full text-xs font-bold hover:bg-white/10 transition">
+RULES
+</a>
+
+<a href="/youtube"
+class="glass px-5 py-2 rounded-full text-xs font-bold hover:bg-white/10 transition">
+YOUTUBE
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+<section class="text-center py-24 px-6 relative overflow-hidden">
+
+<img src="https://i.ibb.co/shy95Fh/logo.png"
+class="w-36 h-36 rounded-full mx-auto mb-8 border border-white/10 shadow-2xl animate__animated animate__zoomIn">
+
+<h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6 animate__animated animate__fadeInUp">
+
+ABOUT <br>
+
+<span class="text-gradient italic">
+DEVELOPERS UNCOPYLOCKED
+</span>
+
+</h1>
+
+<p class="max-w-3xl mx-auto text-gray-400 text-sm md:text-lg animate__animated animate__fadeInUp">
+
+Developers Uncopylocked is a Roblox development-focused Discord community built for creators, learners, scripters, UI designers, map developers, and advanced resource sharing.
+
+</p>
+
+<div class="mt-10 flex flex-wrap justify-center gap-4 animate__animated animate__fadeInUp">
+
+<div class="glass px-6 py-4 rounded-2xl">
+<p class="text-3xl font-black text-blue-400" id="memberCount">...</p>
+<span class="text-xs uppercase tracking-widest text-gray-500">
+Members
+</span>
+</div>
+
+<div class="glass px-6 py-4 rounded-2xl">
+<p class="text-3xl font-black text-green-400" id="onlineCount">...</p>
+<span class="text-xs uppercase tracking-widest text-gray-500">
+Online
+</span>
+</div>
+
+<div class="glass px-6 py-4 rounded-2xl">
+<p class="text-3xl font-black text-purple-400">
+2026
+</p>
+<span class="text-xs uppercase tracking-widest text-gray-500">
+Founded
+</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="max-w-6xl mx-auto px-6 py-10">
+
+<div class="glass p-10 rounded-[3rem] animate__animated animate__fadeInUp">
+
+<h2 class="text-4xl font-black mb-6">
+What is <span class="text-gradient">DU?</span>
+</h2>
+
+<div class="space-y-6 text-gray-400 leading-relaxed">
+
+<p>
+Developers Uncopylocked is an elite Roblox developer community focused on helping creators learn, collaborate, and explore advanced game development systems.
+</p>
+
+<p>
+Inside the server, members can interact with experienced developers, discover useful systems, discuss scripting, showcase creations, and participate in an active creator ecosystem.
+</p>
+
+<p>
+Our goal is to build one of the most advanced Roblox developer communities with high-quality resources, collaborations, and innovation.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURE GRID -->
+<section class="max-w-6xl mx-auto px-6 py-20">
+
+<h2 class="text-center text-4xl font-black mb-14">
+WHY JOIN <span class="text-gradient">DU?</span>
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass cyber-card p-8 rounded-[2rem]">
+<i class="fas fa-code text-blue-400 text-4xl mb-6"></i>
+
+<h3 class="font-black text-2xl mb-4">
+Development
+</h3>
+
+<p class="text-gray-400 text-sm">
+Learn scripting, UI systems, frameworks, optimization, and advanced Roblox development concepts.
+</p>
+</div>
+
+<div class="glass cyber-card p-8 rounded-[2rem]">
+<i class="fas fa-users text-purple-400 text-4xl mb-6"></i>
+
+<h3 class="font-black text-2xl mb-4">
+Community
+</h3>
+
+<p class="text-gray-400 text-sm">
+Join an active network of creators, developers, designers, and contributors.
+</p>
+</div>
+
+<div class="glass cyber-card p-8 rounded-[2rem]">
+<i class="fas fa-bolt text-yellow-400 text-4xl mb-6"></i>
+
+<h3 class="font-black text-2xl mb-4">
+Resources
+</h3>
+
+<p class="text-gray-400 text-sm">
+Access high-quality development resources, systems, inspirations, and creator discussions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOUNDERS -->
+<section class="max-w-6xl mx-auto px-6 py-20">
+
+<h2 class="text-center text-4xl font-black mb-14">
+MEET THE <span class="text-gradient">FOUNDERS</span>
+</h2>
+
+<div class="grid md:grid-cols-2 gap-8">
+
+<!-- ARSH -->
+<div class="glass cyber-card p-10 rounded-[3rem] text-center">
+
+<img src="https://i.ibb.co/s9yLPBg8/arshh.jpg"
+class="w-40 h-40 object-cover rounded-full mx-auto mb-6 border border-blue-500/20">
+
+<h3 class="text-3xl font-black italic">
+Arshh
+</h3>
+
+<p class="text-blue-400 uppercase tracking-[0.3em] text-xs mb-6">
+Owner / Founder
+</p>
+
+<p class="text-gray-400 text-sm mb-6">
+Visionary behind Developers Uncopylocked and creator of the DU ecosystem.
+</p>
+
+<a href="https://www.instagram.com/imarshh.3?igsh=bWk1cmMyeXNqYmNr"
+target="_blank"
+class="bg-gradient-to-r from-pink-500 to-purple-500 px-6 py-3 rounded-2xl font-bold inline-flex items-center gap-2">
+<i class="fab fa-instagram"></i>
+Instagram
+</a>
+
+</div>
+
+<!-- AKSHANSH -->
+<div class="glass cyber-card p-10 rounded-[3rem] text-center">
+
+<img src="https://i.ibb.co/jkBNcQNv/aksansh.jpg"
+class="w-40 h-40 object-cover rounded-full mx-auto mb-6 border border-purple-500/20">
+
+<h3 class="text-3xl font-black italic">
+Akshansh
+</h3>
+
+<p class="text-purple-400 uppercase tracking-[0.3em] text-xs mb-6">
+Co-Owner
+</p>
+
+<p class="text-gray-400 text-sm mb-6">
+Core manager and contributor helping expand the DU community and systems.
+</p>
+
+<a href="https://www.instagram.com/akshansh_6969?igsh=MmIyZ3E2MjQxdnVz"
+target="_blank"
+class="bg-gradient-to-r from-pink-500 to-purple-500 px-6 py-3 rounded-2xl font-bold inline-flex items-center gap-2">
+<i class="fab fa-instagram"></i>
+Instagram
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DISCORD SECTION -->
+<section class="max-w-5xl mx-auto px-6 py-20">
+
+<div class="glass p-10 rounded-[3rem] text-center relative overflow-hidden">
+
+<div class="absolute -top-20 -right-20 w-60 h-60 bg-blue-500/10 blur-3xl rounded-full"></div>
+
+<h2 class="text-5xl font-black mb-6">
+JOIN THE <span class="text-gradient">COMMUNITY</span>
+</h2>
+
+<p class="text-gray-400 max-w-2xl mx-auto mb-10">
+Become part of Developers Uncopylocked and connect with creators, developers, and the Roblox community.
+</p>
+
+<div class="flex flex-wrap justify-center gap-4">
+
+<a href="https://discord.gg/b8wyByrxrU"
+target="_blank"
+class="bg-[#5865F2] hover:bg-[#4752c4] px-10 py-5 rounded-2xl font-black text-lg transition-all shadow-lg shadow-blue-500/20 inline-flex items-center gap-3">
+
+<i class="fab fa-discord text-2xl"></i>
+
+JOIN DISCORD
+
+</a>
+
+<a href="/youtube"
+class="glass border border-white/10 hover:bg-white/10 px-10 py-5 rounded-2xl font-black text-lg transition-all inline-flex items-center gap-3">
+
+<i class="fab fa-youtube text-red-500"></i>
+
+YOUTUBE
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="py-14 text-center border-t border-white/5 mt-20">
+
+<p class="text-[10px] tracking-[0.4em] uppercase opacity-40">
+© 2026 Developers Uncopylocked
+</p>
+
+</footer>
+
+<script>
+
+// REPLACE THIS WITH YOUR SERVER ID
+const SERVER_ID = "1484466222199472228";
+
+async function fetchDiscordStats(){
+
+try{
+
+const res = await fetch(
+`https://discord.com/api/guilds/${SERVER_ID}/widget.json`
+);
+
+const data = await res.json();
+
+document.getElementById("onlineCount").innerText =
+data.presence_count || "0";
+
+document.getElementById("memberCount").innerText =
+data.members.length || "0";
+
+}catch(err){
+
+document.getElementById("onlineCount").innerText = "N/A";
+
+document.getElementById("memberCount").innerText = "1200+";
+
+}
+
+}
+
+fetchDiscordStats();
+
+</script>
+
+</body>
+</html>
