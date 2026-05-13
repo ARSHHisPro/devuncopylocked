@@ -14,44 +14,7 @@
 class="fixed inset-0 bg-black z-[9999] opacity-0 pointer-events-none transition-opacity duration-500">
 </div>
 
-<script>
-
-document.querySelectorAll("a").forEach(link=>{
-
-const href = link.getAttribute("href");
-
-if(href && !href.startsWith("http")){
-
-link.addEventListener("click",function(e){
-
-e.preventDefault();
-
-document.getElementById("pageTransition")
-.classList.remove("opacity-0");
-
-document.getElementById("pageTransition")
-.classList.add("opacity-100");
-
-setTimeout(()=>{
-
-window.location.href = href;
-
-},400);
-
-});
-
-}
-
-});
-
-window.addEventListener("load",()=>{
-
-document.getElementById("pageTransition")
-.classList.add("opacity-0");
-
-});
-
-</script>     
+   
         body {
             background: #020202;
             color: #fff;
