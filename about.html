@@ -387,36 +387,37 @@ YOUTUBE
 
 <script>
 
-// REPLACE THIS WITH YOUR SERVER ID
-const SERVER_ID = "1484466222199472228";
+const INVITE_CODE = "hC6E6Savfm";
 
 async function fetchDiscordStats(){
 
 try{
 
 const res = await fetch(
-`https://discord.com/api/guilds/${SERVER_ID}/widget.json`
+`https://discord.com/api/invites/${INVITE_CODE}?with_counts=true`
 );
 
 const data = await res.json();
 
-document.getElementById("onlineCount").innerText =
-data.presence_count || "0";
-
 document.getElementById("memberCount").innerText =
-data.members.length || "0";
+data.approximate_member_count || "0";
+
+document.getElementById("onlineCount").innerText =
+data.approximate_presence_count || "0";
 
 }catch(err){
 
-document.getElementById("onlineCount").innerText = "N/A";
+document.getElementById("memberCount").innerText = "N/A";
 
-document.getElementById("memberCount").innerText = "1200+";
+document.getElementById("onlineCount").innerText = "N/A";
 
 }
 
 }
 
 fetchDiscordStats();
+
+setInterval(fetchDiscordStats, 30000);
 
 </script>
 
